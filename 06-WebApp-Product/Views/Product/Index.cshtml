@@ -1,0 +1,26 @@
+﻿@model List<Product>
+<h2>Urun Listesi</h2>
+<h2>Ürün Listesi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Adı</th>
+            <th>ucret</th>
+         
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.ucret</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
+}

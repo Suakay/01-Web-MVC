@@ -1,0 +1,25 @@
+﻿@{
+    //Tanımlama işlemleri
+    ViewData["Title"] "View Enginee"
+        Layout = "/Views/Shared/_Layout.cshtml";
+    <h1>Razor View Engine<</h1>
+    <h2>Razor View Engine Kullanım</h2>
+    string ad = "Bile";
+    string soyad = "Adam";
+    int yas = 20;
+
+        <br/> <br /> <br />
+        <p></p>Razor view engine ile değişken çağırma <b></<p>
+@{
+        string[] isimler = { "Bilge","Ayşe","Hayriye" }
+        string[]soyadlar={"Adam","Yılmaz","Türk"}
+       @for(var i=0; isimler.Length;i++)
+       {
+           <p>@isimler[i]<b>@soyadlar[i]</b></p>
+       }
+
+
+ @{
+
+     }
+
